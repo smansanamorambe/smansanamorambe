@@ -1,0 +1,33 @@
+/* assets/css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar-brand { font-weight: bold; letter-spacing: 1px; }
+.hero-img {
+    height: 500px;
+    object-fit: cover; /* Agar gambar tidak gepeng */
+    filter: brightness(0.8); /* Gelapkan sedikit agar tulisan terbaca */
+}
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd; /* Warna Biru Bootstrap */
+}
+.card { transition: transform 0.3s; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.card:hover { transform: translateY(-5px); }
+footer a { text-decoration: none; color: #ddd; }
+footer a:hover { color: #fff; }
