@@ -3,133 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMA Negeri 1 Namorambe - Berprestasi & Berkarakter</title>
+    <title>SMA Negeri 1 Namorambe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-mortarboard-fill me-2"></i>SMAN 1 NAMORAMBE
-            </a>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-building"></i> SMAN 1 NAMORAMBE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="profil.html#sejarah">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="profil.html#guru">Pengajar & Staf</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kesiswaan</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="kesiswaan.html#prestasi">Prestasi Siswa</a></li>
-                            <li><a class="dropdown-item" href="kesiswaan.html#aktivitas">Aktivitas & Ekskul</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="galeri.html">Dokumentasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">Profil & Guru</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prestasi">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="heroCarousel" class="carousel slide mt-5 pt-3" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        </div>
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="height: 500px;">
-                <img src="assets/img/hero-1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Kegiatan Sekolah">
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                    <h3 class="fw-bold">Penerimaan Peserta Didik Baru 2025</h3>
-                    <p>Informasi lengkap mengenai pendaftaran siswa baru.</p>
-                    <a href="https://disdik.sumutprov.go.id/" target="_blank" class="btn btn-warning btn-sm">Baca Berita Selengkapnya <i class="bi bi-box-arrow-up-right"></i></a>
+            <div class="carousel-item active">
+                <img src="assets/img/hero-1.jpg" class="d-block w-100 hero-img" alt="Kegiatan Sekolah">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Selamat Datang di SMAN 1 Namorambe</h2>
+                    <p>Mencetak Generasi Cerdas dan Berakhlak Mulia</p>
+                    <a href="https://disdik.sumutprov.go.id/" target="_blank" class="btn btn-warning">Info Dinas Pendidikan</a>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 500px;">
-                <img src="assets/img/hero-2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Upacara Bendera">
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                    <h3 class="fw-bold">Upacara Peringatan Hari Guru</h3>
-                    <p>Dokumentasi kegiatan upacara bendera di SMAN 1 Namorambe.</p>
+            <div class="carousel-item">
+                <img src="assets/img/hero-2.jpg" class="d-block w-100 hero-img" alt="Lingkungan Sekolah">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Lingkungan Asri & Kondusif</h2>
+                    <p>Mendukung proses belajar mengajar yang efektif.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
-    </header>
+    </div>
 
     <section class="container my-5">
         <div class="row align-items-center">
-            <div class="col-md-5">
-                <img src="assets/img/kepsek.jpg" class="img-fluid rounded shadow" alt="Kepala Sekolah">
+            <div class="col-md-4 text-center">
+                <img src="assets/img/kepsek.jpg" class="img-fluid rounded-circle shadow" style="width: 250px; height: 250px; object-fit: cover;">
             </div>
-            <div class="col-md-7">
-                <h2 class="fw-bold text-primary">Sambutan Kepala Sekolah</h2>
-                <p class="lead fst-italic">"Mewujudkan Generasi Emas yang Berkarakter"</p>
-                <p>Selamat datang di website resmi SMA Negeri 1 Namorambe. Website ini kami hadirkan sebagai media informasi dan komunikasi antara sekolah, siswa, orang tua, dan masyarakat luas.</p>
-                <a href="profil.html" class="btn btn-outline-primary">Lihat Profil Lengkap</a>
+            <div class="col-md-8">
+                <h2 class="section-title text-primary">Sambutan Kepala Sekolah</h2>
+                <p class="lead">"Assalamu’alaikum Warahmatullahi Wabarakatuh"</p>
+                <p>Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa. Website ini hadir sebagai sarana informasi dan komunikasi antara sekolah, orang tua, dan masyarakat.</p>
+                <a href="profil.html" class="btn btn-outline-primary">Lihat Profil Guru & Staf</a>
             </div>
         </div>
     </section>
 
-    <section class="bg-light py-5">
+    <section id="prestasi" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mx-auto" style="width: fit-content;">Prestasi & Aktivitas Siswa</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/img/prestasi-1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Juara 1 Olimpiade Sains</h5>
+                            <p class="card-text">Siswa kami berhasil meraih medali emas tingkat Kabupaten.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/img/kegiatan-1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Kegiatan Pramuka</h5>
+                            <p class="card-text">Perkemahan Sabtu Minggu (Persami) untuk melatih kemandirian.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center justify-content-center bg-white">
+                            <div class="text-center">
+                                <h5>Lihat Dokumentasi Lainnya</h5>
+                                <a href="#" class="btn btn-primary mt-2">Galeri Foto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="py-5">
         <div class="container text-center">
-            <h2 class="fw-bold mb-4">Lokasi Sekolah</h2>
-            <div class="ratio ratio-21x9 shadow border border-3 border-white">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.264167123456!2d98.654321!3d-3.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031303130313031%3A0x1234567890abcdef!2sSMA%20Negeri%201%20Namorambe!5e0!3m2!1sid!2sid!4v1625000000000!5m2!1sid!2sid" 
+            <h2 class="mb-4">Lokasi Sekolah</h2>
+            <div class="ratio ratio-21x9 shadow border">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.222625907485!2d98.653!3d-3.528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzEnNDAuOCJTIDk4wrAzOScxMC44IkU!5e0!3m2!1sen!2sid!4v1625632123456!5m2!1sen!2sid" 
                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="mt-3">
-                <a href="https://share.google/SoSdohabcDTcqhsW7" target="_blank" class="btn btn-primary">
-                    <i class="bi bi-geo-alt-fill"></i> Buka di Google Maps
+                <a href="https://share.google/SoSdohabcDTcqhsW7" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="bi bi-geo-alt-fill"></i> Buka Google Maps
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+    <footer class="bg-dark text-white pt-5 pb-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="text-warning fw-bold">SMAN 1 NAMORAMBE</h5>
-                    <p>Membentuk siswa yang cerdas, terampil, dan berbudi pekerti luhur.</p>
+                    <h5>SMAN 1 NAMORAMBE</h5>
+                    <p>Alamat: Namorambe, Deli Serdang, Sumatera Utara.</p>
+                    <p>Email: info@sman1namorambe.sch.id</p>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold">Kontak Kami</h5>
+                    <h5>Tautan Eksternal</h5>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt"></i> Namorambe, Deli Serdang</li>
-                        <li><i class="bi bi-telephone"></i> (061) 123-4567</li>
-                        <li><i class="bi bi-envelope"></i> info@sman1namorambe.sch.id</li>
+                        <li><a href="https://disdik.sumutprov.go.id/">Dinas Pendidikan Sumut</a></li>
+                        <li><a href="#">Kemendikbud</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold">Tautan Cepat</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://disdik.sumutprov.go.id/" class="text-white text-decoration-none">Dinas Pendidikan Sumut</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">E-Rapor</a></li>
-                    </ul>
+                    <h5>Jam Operasional</h5>
+                    <p>Senin - Jumat: 07:00 - 16:00 WIB</p>
+                    <p>Sabtu: 07:00 - 13:00 WIB</p>
                 </div>
             </div>
             <hr>
-            <div class="text-center">
-                <p class="small mb-0">&copy; 2025 SMA Negeri 1 Namorambe. Created with <i class="bi bi-heart-fill text-danger"></i> by Tim IT Sekolah.</p>
+            <div class="text-center small">
+                &copy; 2025 SMA Negeri 1 Namorambe.
             </div>
         </div>
     </footer>
